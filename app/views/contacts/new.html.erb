@@ -1,7 +1,7 @@
 <p>Hello Contacts</p>
-<%= form_with(model: @contact) do |form|%>
+<%= form_with(model: @contact, local: true) do |form| %>
 <div class='contact_title'>
-  <%= form.label :tite %>
+  <%= form.label :title %>
   <br>
   <%= form.text_field :title %>
 </div>
@@ -15,5 +15,5 @@
   <br>
   <%= form.text_field :contact %>
 </div>
-<%= submit %>
+<%= form.submit %>
 <% end %>
