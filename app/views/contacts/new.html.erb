@@ -1,0 +1,19 @@
+<p>Hello Contacts</p>
+<%= form_with(model: @contact) do |form|%>
+<div class='contact_title'>
+  <%= form.label :tite %>
+  <br>
+  <%= form.text_field :title %>
+</div>
+<div class='contact_title'>
+  <%= form.label :mail %>
+  <br>
+  <%= form.email_field :title %>
+</div>
+<div class='contact_title'>
+  <%= form.label :contact %>
+  <br>
+  <%= form.text_field :contact %>
+</div>
+<%= submit %>
+<% end %>
